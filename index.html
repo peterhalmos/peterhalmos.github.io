@@ -1,153 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="index.css">
-    <meta name="google-site-verification" content="xvD194KsBxeaW40tr48z5nGiEF-zbgEgpTNHhK2AMu8" />
-  </head>
-<html>
-  <style>
-    body{
-        margin: 5% 20%;
-        font-family: Arial, sans-serif;
-        text-align: left;
-max-width: 1200px; /* Set a maximum width */
-            margin: 0 auto; /* Center the content */
-    }
-
-    hr {
-      margin: 2% 0%;
-    }
-
-    li {
-      margin-bottom: 1%;
-      margin-top: 1%;
-    }
-
-    h1, h2 {
-      text-align: center;
-    }
-
-    #picture-div {
-      width: 350px; 
-      float:right;
-      margin-left: 10%;
-      margin-right: -13%;
-    }
-
-    img{
-      height: 250px;
-      border-radius: 25px;
-    }
-
-    a {
-      color: darkblue;
-    }
-
-  </style>
-<body>
-
-  <div id="picture-div"><img src="IMG_github.jpg"></img></div>
-
-  <h1>Peter Halmos</h1>
-<p> 
-
-Hi! I’m a CS PhD student at Princeton University and am fortunate to be advised by <a href = “https://raphael-group.github.io/”> Ben Raphael </a>. I previously graduated from Columbia University as a Computer Science major with a concentration in Chemistry. At Columbia and the New York Genome Center I was fortunate to have met and worked with <a href = "https://davidaknowles.github.io/">David Knowles</a> who introduced me to the intersection of machine learning and computational biology.
-
-<br> Contact: ph3641 [at] princeton [dot] edu | Office: 35 Olden Street
-</p>
-<hr>
-
-    <h2>Research Interests</h2>
-    <ul>
-My research lies at the intersection of pure machine learning and computational biology. I am interested in the computational and mathematical aspects of optimal transport, including low-rank and neural optimal transport, as well as flow-based generative models. My focus is on developing and adapting these tools to quantitatively infer developmental trajectories in single-cell and spatial transcriptomics, and to understand the dynamics of cell differentiation in space and time.
-    </ul>
-<hr>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter H</title>
+    <meta name="google-site-verification" content="xvD194KsBxeaW40tr48z5nGiEF-zbgEgpTNHhK2AMu8">
+    <title>Peter Halmos</title>
+    <link rel="stylesheet" href="index.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
             line-height: 1.6;
-            margin: 20px;
         }
-        h1 {
-            color: #333;
-            text-align: center; /* Center the heading */
-            font-size: 24px; /* Decrease the font size */
+
+        h1, h2 {
+            text-align: center;
         }
+
+        hr {
+            margin: 2% 0;
+        }
+
+        li {
+            margin-bottom: 1%;
+        }
+
+        #picture-div {
+            width: 350px;
+            float: right;
+            margin-left: 10%;
+        }
+
+        img {
+            height: 250px;
+            border-radius: 25px;
+        }
+
+        a {
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .publications {
             max-width: 800px;
             margin: auto;
         }
+
         .publication {
             margin-bottom: 20px;
         }
+
         .title {
             font-weight: bold;
         }
+
         .authors {
             font-style: italic;
         }
+
         .conference {
             color: gray;
         }
     </style>
 </head>
 <body>
+    <div id="picture-div">
+        <img src="IMG_github.jpg" alt="Peter Halmos">
+    </div>
+
+    <h1>Peter Halmos</h1>
+    <p>
+        Hi! I’m a CS PhD student at Princeton University and am fortunate to be advised by 
+        <a href="https://raphael-group.github.io/">Ben Raphael</a>. I previously graduated from Columbia University as a Computer Science major with a concentration in Chemistry. 
+        At Columbia and the New York Genome Center, I worked with 
+        <a href="https://davidaknowles.github.io/">David Knowles</a>, exploring the intersection of machine learning and computational biology.
+        <br><br>
+        Contact: ph3641 [at] princeton [dot] edu | Office: 35 Olden Street
+    </p>
+    <hr>
+
+    <h2>Research Interests</h2>
+    <p>My research lies at the intersection of pure machine learning and computational biology. I am interested in the computational and mathematical aspects of optimal transport, including low-rank and neural optimal transport, as well as flow-based generative models. My focus is on developing and adapting these tools to quantitatively infer developmental trajectories in single-cell and spatial transcriptomics, and to understand the dynamics of cell differentiation in space and time.</p>
+    <hr>
+
+    <h2>Publications</h2>
     <div class="publications">
-        <h1>Publications</h1>
         <div class="publication">
             <p class="title">Learning Latent Trajectories in Developmental Time Series with Hidden-Markov Optimal Transport</p>
             <p class="authors">Peter Halmos, Julian Gold, Xinhao Liu, and Benjamin J. Raphael</p>
             <p class="conference">RECOMB 2025</p>
         </div>
         <div class="publication">
-            <p class="title"><a href = "https://openreview.net/pdf?id=hGgkdFF2hR" >Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling</a></p>
+            <p class="title">
+                <a href="https://openreview.net/pdf?id=hGgkdFF2hR">Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling</a>
+            </p>
             <p class="authors">Peter Halmos, Xinhao Liu, Julian Gold, and Benjamin J. Raphael</p>
             <p class="conference">NeurIPS 2024</p>
         </div>
         <div class="publication">
-            <p class="title"><a href = "https://www.biorxiv.org/content/10.1101/2024.03.05.583575v1" >DeST-OT: Alignment of Spatiotemporal Transcriptomics Data</a></p>
+            <p class="title">
+                <a href="https://www.biorxiv.org/content/10.1101/2024.03.05.583575v1">DeST-OT: Alignment of Spatiotemporal Transcriptomics Data</a>
+            </p>
             <p class="authors">Peter Halmos, Xinhao Liu, Julian Gold, Feng Chen, Li Ding, and Benjamin J. Raphael</p>
             <p class="conference">Cell Systems and RECOMB 2024</p>
         </div>
         <div class="publication">
-            <p class="title"><a href = "https://www.ashg.org/wp-content/uploads/2022/09/ASHG2022-PosterAbstracts.pdf" >Pooled RNA-IP approach to investigate variant effects on RBP binding and splicing</a></p>
+            <p class="title">
+                <a href="https://www.ashg.org/wp-content/uploads/2022/09/ASHG2022-PosterAbstracts.pdf">Pooled RNA-IP approach to investigate variant effects on RBP binding and splicing</a>
+            </p>
             <p class="authors">Megan Schertzer, Peter Halmos, K. Dobrindt, K. Brennand, David Knowles</p>
             <p class="conference">ASHG 2022</p>
         </div>
         <div class="publication">
-            <p class="title"><a href = "https://arxiv.org/abs/2308.11933" >System Identification for Continuous-time Linear Dynamical Systems</a></p>
+            <p class="title">
+                <a href="https://arxiv.org/abs/2308.11933">System Identification for Continuous-time Linear Dynamical Systems</a>
+            </p>
             <p class="authors">Peter Halmos, Jonathan Pillow, David Knowles</p>
             <p class="conference">ArXiV</p>
         </div>
     </div>
-</body>
-        
-
-<h2>Previous Research Projects</h2>
-<ul>
-   <li>I also worked at <a href="https://www.foundationmedicine.com">Foundation Medicine</a> as an undergraduate, supervised by Justin Newberg, Garrett Frampton, and Megan Montesion. I worked on two projects accepted to AACR 2020 as abstracts
-   <ul>
-     <li> <i>Pan-chromosome analysis does not reveal parental or ancestral bias in chromosome loss of heterozygosity</i>
-    <li> <i>Pan-cancer analysis of sex differences and their associations with ancestry and genomic biomarkers in a large comprehensive genomic profiling dataset </i>
-   </ul>
-  </li>
-    
-</ul>
-<hr>
-
-<h2>Teaching</h2>
-<p>
-I was previously a teaching assistant for Organic Chemistry at Columbia with Professor Talha Siddiqui. During the summer of 2023 I was a Computer Science instructor at the King Summer Institute, where I taught an introductory Java course.
-
-<h2>Other</h2>
-Outside of my academic interests I am an avid hiker and an amateur birder, botanist, and <a href="https://www.flickr.com/photos/143173976@N05/">photographer</a>. Credits for this website template go to <a href="https://eg314159.github.io">Elena Gribelyuk</a>, who I shamelessly lifted this from.
-
     <hr>
 
+    <h2>Previous Research Projects</h2>
+    <ul>
+        <li>
+            I worked at <a href="https://www.foundationmedicine.com">Foundation Medicine</a> as an undergraduate, supervised by Justin Newberg, Garrett Frampton, and Megan Montesion. I contributed to two projects accepted to AACR 2020:
+            <ul>
+                <li><i>Pan-chromosome analysis does not reveal parental or ancestral bias in chromosome loss of heterozygosity</i></li>
+                <li><i>Pan-cancer analysis of sex differences and their associations with ancestry and genomic biomarkers in a large comprehensive genomic profiling dataset</i></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Teaching</h2>
+    <p>
+        I was previously a teaching assistant for Organic Chemistry at Columbia with Professor Talha Siddiqui. During the summer of 2023, I was a Computer Science instructor at the King Summer Institute, where I taught an introductory Java course.
+    </p>
+    <hr>
+
+    <h2>Other</h2>
+    <p>
+        Outside of my academic interests, I am an avid hiker and an amateur birder, botanist, and 
+        <a href="https://www.flickr.com/photos/143173976@N05/">photographer</a>. 
+        Credits for this website template go to <a href="https://eg314159.github.io">Elena Gribelyuk</a>, who I shamelessly lifted this from.
+    </p>
+    <hr>
 </body>
 </html>
