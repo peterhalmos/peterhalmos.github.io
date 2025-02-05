@@ -7,6 +7,9 @@
     <title>Peter Halmos</title>
     <link rel="stylesheet" href="index.css">
     <style>
+        /* ---------------------------
+           Global Styles
+        ---------------------------- */
         body {
             font-family: Arial, sans-serif;
             max-width: 1200px;
@@ -23,21 +26,36 @@
             margin: 2% 0;
         }
 
+        /* Optional: unify margins/paddings for lists */
+        ul {
+            padding-left: 20px;
+        }
         li {
             margin-bottom: 1%;
         }
 
+        /* ---------------------------
+           Image & Picture Container
+        ---------------------------- */
         #picture-div {
             width: 350px;
             float: right;
             margin-left: 10%;
+            /* Optional: ensuring responsiveness by limiting width in small viewports
+               max-width: 100%; */
         }
-
+        
         img {
             height: 250px;
             border-radius: 25px;
+            /* Optional: ensure the image scales on small devices
+               max-width: 100%;
+               height: auto; */
         }
 
+        /* ---------------------------
+           Links
+        ---------------------------- */
         a {
             color: darkblue;
             text-decoration: none;
@@ -47,9 +65,13 @@
             text-decoration: underline;
         }
 
-        .publications {
+        /* ---------------------------
+           Publications & Preprints
+        ---------------------------- */
+        .publications,
+        .preprints {
             max-width: 800px;
-            margin: auto;
+            margin: 0 auto 40px auto; /* Added bottom spacing for clarity */
         }
 
         .publication {
@@ -62,6 +84,9 @@
 
         .authors {
             font-style: italic;
+            /* Optional: add a small margin or display block for better spacing
+               display: block;
+               margin-bottom: 2px; */
         }
 
         .conference {
@@ -86,9 +111,16 @@
     <hr>
 
     <h2>Research Interests</h2>
-    <p>My research lies at the intersection of pure machine learning and computational biology. I am interested in the computational and mathematical aspects of optimal transport, including low-rank and neural optimal transport, as well as flow-based generative models. My focus is on developing and adapting these tools to quantitatively infer developmental trajectories in single-cell and spatial transcriptomics, and to understand the dynamics of cell differentiation in space and time.</p>
+    <p>
+        My research lies at the intersection of pure machine learning and computational biology. 
+        I am interested in the computational and mathematical aspects of optimal transport, 
+        including low-rank and neural optimal transport, as well as flow-based generative models.
+        My focus is on developing and adapting these tools to quantitatively infer developmental trajectories 
+        in single-cell and spatial transcriptomics, and to understand the dynamics of cell differentiation in space and time.
+    </p>
     <hr>
 
+    <!-- Publications Section -->
     <h2>Publications</h2>
     <div class="publications">
         <div class="publication">
@@ -98,25 +130,38 @@
         </div>
         <div class="publication">
             <p class="title">
-                <a href="https://openreview.net/pdf?id=hGgkdFF2hR">Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling</a>
+                <a href="https://openreview.net/pdf?id=hGgkdFF2hR">
+                    Low-Rank Optimal Transport through Factor Relaxation with Latent Coupling
+                </a>
             </p>
             <p class="authors">Peter Halmos, Xinhao Liu, Julian Gold, and Benjamin J. Raphael</p>
             <p class="conference">NeurIPS 2024</p>
         </div>
         <div class="publication">
             <p class="title">
-                <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(24)00365-X">DeST-OT: Alignment of Spatiotemporal Transcriptomics Data</a>
+                <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(24)00365-X">
+                    DeST-OT: Alignment of Spatiotemporal Transcriptomics Data
+                </a>
             </p>
             <p class="authors">Peter Halmos, Xinhao Liu, Julian Gold, Feng Chen, Li Ding, and Benjamin J. Raphael</p>
             <p class="conference">Cell Systems</p>
         </div>
         <div class="publication">
             <p class="title">
-                <a href="https://www.ashg.org/wp-content/uploads/2022/09/ASHG2022-PosterAbstracts.pdf">Pooled RNA-IP approach to investigate variant effects on RBP binding and splicing</a>
+                <a href="https://www.ashg.org/wp-content/uploads/2022/09/ASHG2022-PosterAbstracts.pdf">
+                    Pooled RNA-IP approach to investigate variant effects on RBP binding and splicing
+                </a>
             </p>
             <p class="authors">Megan Schertzer, Peter Halmos, K. Dobrindt, K. Brennand, David Knowles</p>
             <p class="conference">ASHG 2022</p>
         </div>
+    </div>
+    <hr>
+
+    <!-- Preprints Section -->
+    <h2>Preprints</h2>
+    <div class="preprints">
+        <!-- Example preprint entry -->
         <div class="publication">
             <p class="title">
                 <a href="https://arxiv.org/abs/2308.11933">System Identification for Continuous-time Linear Dynamical Systems</a>
@@ -124,13 +169,15 @@
             <p class="authors">Peter Halmos, Jonathan Pillow, David Knowles</p>
             <p class="conference">ArXiV</p>
         </div>
+        <!-- Add more preprint entries as needed -->
     </div>
     <hr>
 
     <h2>Previous Research Projects</h2>
     <ul>
         <li>
-            I worked at <a href="https://www.foundationmedicine.com">Foundation Medicine</a> as an undergraduate, supervised by Justin Newberg, Garrett Frampton, and Megan Montesion. I contributed to two projects accepted to AACR 2020:
+            I worked at <a href="https://www.foundationmedicine.com">Foundation Medicine</a> as an undergraduate, supervised by 
+            Justin Newberg, Garrett Frampton, and Megan Montesion. I contributed to two projects accepted to AACR 2020:
             <ul>
                 <li><i>Pan-chromosome analysis does not reveal parental or ancestral bias in chromosome loss of heterozygosity</i></li>
                 <li><i>Pan-cancer analysis of sex differences and their associations with ancestry and genomic biomarkers in a large comprehensive genomic profiling dataset</i></li>
@@ -141,7 +188,9 @@
 
     <h2>Teaching</h2>
     <p>
-        I was previously a teaching assistant for Organic Chemistry at Columbia with Professor Talha Siddiqui. During the summer of 2023, I was a Computer Science instructor at the King Summer Institute, where I taught an introductory Java course.
+        I was previously a teaching assistant for Organic Chemistry at Columbia with Professor Talha Siddiqui. 
+        I also teach Computer Science at the King Summer Institute, where I've taught 
+        an introductory Java course.
     </p>
     <hr>
 
@@ -149,7 +198,8 @@
     <p>
         Outside of my academic interests, I am an avid hiker and an amateur birder, botanist, and 
         <a href="https://www.flickr.com/photos/143173976@N05/">photographer</a>. 
-        Credits for this website template go to <a href="https://eg314159.github.io">Elena Gribelyuk</a>, who I shamelessly lifted this from.
+        Credits for this website template go to <a href="https://eg314159.github.io">Elena Gribelyuk</a>, 
+        who I shamelessly lifted this from.
     </p>
     <hr>
 </body>
