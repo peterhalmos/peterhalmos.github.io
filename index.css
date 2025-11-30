@@ -1,0 +1,260 @@
+/* ---------------------------
+   Base & Layout
+---------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f5f5f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+/* ---------------------------
+   Header / Hero
+---------------------------- */
+
+.site-header {
+    margin-bottom: 24px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.07);
+}
+
+.hero-text {
+    flex: 1 1 260px;
+}
+
+.hero-photo {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e5e7eb;
+}
+
+/* Name & role */
+
+.name {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.02em;
+}
+
+.role {
+    margin: 4px 0 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.meta,
+.contact {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+/* ---------------------------
+   Navigation
+---------------------------- */
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    padding: 8px 4px;
+    font-size: 0.9rem;
+}
+
+.top-nav a {
+    padding: 6px 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #374151;
+    background: #e5e7eb;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.top-nav a:hover {
+    background: #111827;
+    color: #f9fafb;
+}
+
+/* ---------------------------
+   Sections
+---------------------------- */
+
+.section {
+    margin-top: 32px;
+}
+
+.section-title {
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+}
+
+.section-intro {
+    margin-bottom: 16px;
+    color: #4b5563;
+}
+
+/* ---------------------------
+   Cards & Lists
+---------------------------- */
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+/* Publications */
+
+.pub-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pub-title a {
+    text-decoration: none;
+    color: #111827;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.pub-title a:hover {
+    color: #0f766e;
+    border-color: #0f766e;
+}
+
+.pub-authors {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.pub-venue {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Talks */
+
+.talk-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.talk-meta {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.talk-extra {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+}
+
+/* Lists inside cards */
+
+.card ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 4px;
+}
+
+/* ---------------------------
+   Links
+---------------------------- */
+
+a {
+    color: #0f766e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+
+.site-footer {
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-align: center;
+}
+
+/* ---------------------------
+   Responsiveness
+---------------------------- */
+
+@media (max-width: 720px) {
+    .page-wrapper {
+        padding: 16px 12px 32px;
+    }
+
+    .hero {
+        padding: 18px 16px;
+    }
+
+    .hero-photo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+}
