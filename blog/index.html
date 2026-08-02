@@ -1,0 +1,71 @@
+---
+layout: null
+title: Notes
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Notes | Peter Halmos</title>
+
+  <link
+    rel="stylesheet"
+    href="{{ '/index.css' | relative_url }}"
+  >
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/blog.css' | relative_url }}"
+  >
+</head>
+
+<body>
+  <div class="page-wrapper blog-shell">
+
+    <nav class="top-nav blog-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog/' | relative_url }}">Notes</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-text">
+        <h1 class="name">Notes</h1>
+        <p class="role">
+          Visual and mathematical essays on optimal transport,
+          machine learning, information geometry, and biology.
+        </p>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="card-list">
+
+        {% for post in site.posts %}
+          <article class="card">
+            <h2 class="pub-title">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h2>
+
+            <p class="pub-authors">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+
+            {% if post.description %}
+              <p>{{ post.description }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
