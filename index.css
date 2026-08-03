@@ -258,3 +258,97 @@ a:hover {
         font-size: 1.8rem;
     }
 }
+/* Recent Notes and News */
+.notes-section {
+    margin-top: 2.5rem;
+}
+
+.section-heading-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading-row .section-title {
+    margin-bottom: 0;
+}
+
+.view-all-link {
+    white-space: nowrap;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.notes-list {
+    margin-top: 1rem;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-note {
+    border-width: 2px;
+}
+
+.note-date {
+    margin: 0 0 0.45rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+.note-description {
+    margin: 0.5rem 0 1rem;
+    line-height: 1.55;
+}
+
+.note-read-more {
+    margin-top: auto;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.news-list {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid currentColor;
+}
+
+.news-heading {
+    margin: 0 0 0.75rem;
+    font-size: 1.05rem;
+}
+
+.news-item {
+    margin: 0.45rem 0;
+}
+
+.news-item time {
+    display: inline-block;
+    min-width: 7rem;
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 650px) {
+    .section-heading-row {
+        display: block;
+    }
+
+    .view-all-link {
+        display: inline-block;
+        margin-top: 0.4rem;
+    }
+
+    .news-item time {
+        display: block;
+        min-width: 0;
+        margin-bottom: 0.15rem;
+    }
+}
