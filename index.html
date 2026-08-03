@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +70,7 @@
                 <a href="#research-interests">Research</a>
                 <a href="#publications">Publications</a>
                 <a href="#preprints">Preprints</a>
-                <a href="/blog/">Notes</a>
+                <a href="#notes">Notes & News</a>
                 <a href="#talks">Talks</a>
                 <a href="#teaching">Teaching</a>
                 <a href="#other">Other</a>
@@ -84,7 +87,7 @@
                     of optimal transport based distributional optimization (the JKO Scheme and Wasserstein gradient flow),
                     and optimizing for unnormalized distributions (score-matching, Fokker-Planck, and diffusion models).
                 </p>
-                </p>
+                <p>
                     I adapt these mathematical techniques for computational applications to high-throughput spatiotemporal biological data
                     recorded via dissociated marginal distributions (snapshots). I develop methods which infer couplings between such
                     data marginals via optimal transport, inferring maps for spatiotemporal dynamics and growth-rates, 
@@ -93,6 +96,61 @@
                 </p>
             </section>
 
+            <!-- Recent Notes and News -->
+<section id="notes" class="section notes-section">
+    <div class="section-heading-row">
+        <h2 class="section-title">Recent Notes &amp; News</h2>
+        <a class="view-all-link" href="{{ '/blog/' | relative_url }}">
+            View all notes →
+        </a>
+    </div>
+
+    <div class="card-list notes-list">
+        {% for post in site.posts limit:3 %}
+        <article class="card note-card{% if forloop.first %} featured-note{% endif %}">
+            <p class="note-date">
+                {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+
+            <h3 class="pub-title">
+                <a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+            </h3>
+
+            {% if post.subtitle %}
+            <p class="note-description">
+                {{ post.subtitle }}
+            </p>
+            {% elsif post.description %}
+            <p class="note-description">
+                {{ post.description }}
+            </p>
+            {% else %}
+            <p class="note-description">
+                {{ post.excerpt | strip_html | truncate: 180 }}
+            </p>
+            {% endif %}
+
+            <p class="note-read-more">
+                <a href="{{ post.url | relative_url }}">Read note →</a>
+            </p>
+        </article>
+        {% endfor %}
+    </div>
+
+    <div class="news-list">
+        <h3 class="news-heading">News</h3>
+
+        <p class="news-item">
+            <time datetime="2026-07">July 2026</time>
+            Riemannian Metric Learning for Alignment of Spatial Multiomics
+            received the ISMB Best Student Paper Award!
+        </p>
+    </div>
+    
+</section>
+            
             <!-- Publications -->
             <section id="publications" class="section">
                 <h2 class="section-title">Publications</h2>
